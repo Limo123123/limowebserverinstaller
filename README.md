@@ -13,7 +13,7 @@ The Download of the exhale of the webserver content can be up to 1-2 Hours, The 
 And here it is:
 
 
-curl -sSL https://github.com/Limo123123/limowebserverinstaller/installscript/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/Limo123123/limowebserverinstaller/main/installscript/install.sh | bash
 
 
 I hope it works all fine to you.
