@@ -10,8 +10,9 @@ rm index.html
 cd
 cd installfiles
 sudo apt install wget -y
-wget 
-cd installfiles
+wget https://www.dropbox.com/scl/fo/ljcl4jbc6gobq8z25bwzl/h?rlkey=zfaif3j52z1ojrqf01zov8cp1&dl=1
+unzip html.zip
+cd html
 cp -R ./html/ /var/www/html 
 cd
 
