@@ -9,9 +9,10 @@ cd /var/www/html
 rm index.html
 cd
 cd installfiles
-git clone https://github.com/Limo123123/limowebserverinstaller/installfiles/
+sudo apt install wget -y
+wget 
 cd installfiles
-cp ./html/ /var/www/html 
+cp -R ./html/ /var/www/html 
 cd
 
 
