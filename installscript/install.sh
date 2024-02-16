@@ -7,14 +7,12 @@ mv 'html.zip'$'\r' html.zip
 
 unzip html.zip
 
-sudo apt update && sudo apt upgrade -y
-
-sudo apt install apache2 php -y
+sudo apt install apache2 php 
 
 sudo chmod -R pi:www-data -R /var/www/html
 chmod 750 -R /var/www/html
 
-cp -r html/ /var/www/html
+cp -r html /var/www/html
 
 rm html.zip
 
