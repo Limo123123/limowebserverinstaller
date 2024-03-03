@@ -22,6 +22,21 @@ And here it is:
 curl -sSL https://raw.githubusercontent.com/Limo123123/limowebserverinstaller/main/installscript/install.sh | bash
 
 
+If you don't have Curl use my Apt Repo. To Add my apt Repo use this Command:
+
+
+sudo sh -c "echo 'deb [trusted=yes] https://raw.githubusercontent.com/Limo123123/aptrepo/main/ bookworm main' >> /etc/apt/sources.list"
+
+
+Run then: sudo apt update 
+And then run this command:
+
+
+sudo apt install www-limo-all && gtl-installer
+
+
+It will install the Webserver.
+
 I hope it works all fine to you.
 
 # The Informations
