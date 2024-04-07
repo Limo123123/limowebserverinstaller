@@ -1,4 +1,4 @@
-# This Project was not maintained because of Script defunction
+# This Project was not maintained because the script was not compatible
 
 I want to re-create the project!
 Please see my other Projects.
