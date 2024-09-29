@@ -16,14 +16,16 @@ Arch linux and Windows is not Supportet
 The Download of the exhale of the webserver content can be up to 5-15 Minuts, The Download is provided by Github Releases
 
 # Here is the Download
+
+# Standard Curl Installation
 And here it is:
 
 
 curl -sSL https://raw.githubusercontent.com/Limo123123/limowebserverinstaller/main/installscript/install.sh | bash
 
 
-If you don't have Curl use my Apt Repo. To Add my apt Repo use this Command:
-
+# APT Deb-Package Installation
+Run This Command to add the Repo
 
 sudo sh -c "echo 'deb [trusted=yes] https://raw.githubusercontent.com/Limo123123/aptrepo/main/ bookworm main' >> /etc/apt/sources.list"
 
@@ -34,10 +36,32 @@ And then run this command:
 
 sudo apt install www-limo-all && gtl-installer
 
+# New: Docker Installation
 
-It will install the Webserver.
+To install it with Docker Run:
+
+docker run -d -p 80:80 limo123123/limo-webserver:wre
+
+Enter after 'wre' The Release you Want z.b. 4.0
 
 I hope it works all fine to you.
+
+# Notes
+
+Curl Installation:
+The Curl Installation is the Main Installer. Please Prefer to use this Installer
+But you can Only Install Version 4.0
+
+APT-Repo-Deb Installation:
+WARNING: Curently is this Installation Method Outdated. It will Only Install Version 1.0
+You can Install It on all Deb Distrobutions and Architectures
+
+Docker Installation:
+Docker only supports Release 4.0, all Releases after 4.0 Will be listed.
+So you can Install later Version 4.0 - Last Version.
+I don't think that I will add Versions Below 4
+Only Supports Linux/Arm64/V8 other architectures are not Supported
+
 
 # The Informations
 The download can be up to 5-10 minuts (With LAN) because its provided by Github Releases (Nope not anymore now Google Drive, Drop Box etc.), I ussually dont have money to host it at a other place I hope it works fine.
