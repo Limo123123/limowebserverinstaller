@@ -3,7 +3,7 @@
 I want to re-create the project!
 Please see my other Projects.
 I want to re-create many projects now
-Why didn't it work? (Bec I am a bad Bash Programmer)
+Why didn't it work? (Bec I am a bad ~~Bash~~ Programmer. It's shell. I am Dumb. That is just some commands!)
 
 # limowebserverinstaller
 This is a little games webserver Installer for the Raspberry Pi
