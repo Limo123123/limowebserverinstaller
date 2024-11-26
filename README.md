@@ -1,22 +1,22 @@
-# This Project was not maintained because the script was not Working
+# This Project was not maintained because the script didnt work
 
 I want to re-create the project!
 Please see my other Projects.
-I want to re-create many projects now
+I want to re-create many projects now!
 Why didn't it work? (Bec I am a bad ~~Bash~~ Programmer. It's shell. I am Dumb. That is just some commands!)
 
 # limowebserverinstaller
-This is a little games webserver Installer for the Raspberry Pi
+This is a little games webserver installer for the Raspberry Pi
 
 Its tested on the Raspberry Pi (with user pi)
 
-On Debian based systems it can work but its no tested.
+On Debian based systems with the Arch X68 or not Arm is it not supported buit it can work
 
 Arch Linux and Windows is not Supportet 
 
-The Download of the exhale of the webserver content can take up to 5-15 Minuts, The Download is provided by Github Releases
+The Download of the exhale of the webserver content can take up to 5-15 Minuts, The Download is in Github Releases
 
-# Here is the Download
+# Download Options
 
 # Standard Curl Installation
 And here it is:
@@ -25,7 +25,7 @@ And here it is:
 curl -sSL https://raw.githubusercontent.com/Limo123123/limowebserverinstaller/main/installscript/install.sh | bash
 
 
-# APT Deb-Package Installation
+# APT Deb-Package Installation (Outdatet)
 Run This Command to add the Repo
 
 sudo sh -c "echo 'deb [trusted=yes] https://raw.githubusercontent.com/Limo123123/aptrepo/main/ bookworm main' >> /etc/apt/sources.list"
@@ -38,6 +38,7 @@ And then run this command:
 sudo apt install www-limo-all && gtl-installer
 
 Please Note that this Installation is Outadet and will install an kinda old version like 1.0
+It will get no updates for the future
 
 # New: Docker Installation
 
