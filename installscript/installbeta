@@ -1,0 +1,63 @@
+#!/bin/bash
+
+set -euo pipefail
+
+# Function to check system architecture
+check_architecture() {
+    local arch
+    arch=$(uname -m)
+
+    case "$arch" in
+        arm64|aarch64|armv7l|armv6l|armhf)
+            printf "Compatible ARM architecture detected: %s\n" "$arch"
+            return 0
+            ;;
+        *)
+            printf "Incompatible architecture detected: %s\n" "$arch" >&2
+            return 1
+            ;;
+    esac
+}
+
+# Function to install the webserver
+install_webserver() {
+    printf "Installing the webserver...\n"
+
+    local url="https://github.com/Limo123123/limowebserverinstaller/releases/download/4.0/html.zip"
+    local temp_dir
+    temp_dir=$(mktemp -d)
+
+    if ! wget -q -O "$temp_dir/html.zip" "$url"; then
+        printf "Failed to download html.zip\n" >&2
+        return 1
+    fi
+
+    if ! unzip -q "$temp_dir/html.zip" -d "$temp_dir"; then
+        printf "Failed to unzip html.zip\n" >&2
+        return 1
+    fi
+
+    sudo apt update -y
+    sudo apt install apache2 php -y
+
+    sudo chown -R pi:www-data /var/www/html
+    sudo chmod -R 750 /var/www/html
+
+    cp -r "$temp_dir/html/"* /var/www/html
+    rm -f "$temp_dir/html.zip"
+    rm -rf "$temp_dir/html"
+
+    printf "Webserver installation completed.\n"
+}
+
+# Main function
+main() {
+    if ! check_architecture; then
+        exit 1
+    fi
+
+    install_webserver
+    printf "That was it\n"
+}
+
+main "$@"
