@@ -37,6 +37,8 @@ And then run this command:
 
 sudo apt install www-limo-all && gtl-installer
 
+Please Note that this Installation is Outadet and will install an kinda old version like 1.0
+
 # New: Docker Installation
 
 To install it with Docker Run:
@@ -46,6 +48,19 @@ docker run -d -p 80:80 limo123123/limo-webserver:wre
 Enter after 'wre' The Release you Want z.b. 4.0
 
 I hope it works all fine to you.
+
+
+# Beta Installer
+
+The Beta Installer is ONLY A NEW INSTALL SKRIPT!
+It now checks your arch after Arm64 or Arm32(ArmHf, Just 32 Bit)
+If you have an other Arch it will be blocked
+Does it even work? IDK! No Risk no Fun. Are my Docs tooo funny (not)?
+
+Here the link:
+
+curl -sSL https://raw.githubusercontent.com/Limo123123/limowebserverinstaller/main/installscript/installbeta | bash
+
 
 # Notes
 
